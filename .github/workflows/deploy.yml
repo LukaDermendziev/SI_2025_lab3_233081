@@ -1,4 +1,3 @@
-
 name: Lint, Build, Deploy HTML, and Push Docker Image
 
 on:
@@ -86,6 +85,3 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/si-2025-lab3:${BRANCH_NAME}-latest
-
-deploy.yml
-
